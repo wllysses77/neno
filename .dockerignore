@@ -1,0 +1,17 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.dockerignore
+
+# Ambiente virtual
+venv/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Arquivo de banco de dados
+escola.db

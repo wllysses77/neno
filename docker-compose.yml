@@ -1,0 +1,17 @@
+
+
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: imersao-devops-api
+    ports:
+      - "8000:8000"
+    # Nesta configuração simplificada, o foco é apenas na aplicação:
+    # - O código-fonte é copiado para a imagem durante o 'build'.
+    # - O banco de dados SQLite ('escola.db') será criado dentro do
+    #   contêiner e será perdido se o contêiner for recriado (efêmero).
+    # - O comando de inicialização é o padrão definido no Dockerfile.
+    volumes:
+      - .:/app
